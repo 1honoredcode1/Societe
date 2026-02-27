@@ -107,9 +107,8 @@ const Hero = () => {
               className="pl-2 flex-1 outline-none"
             />
             <button
-              className="bg-[linear-gradient(135deg,#0066ff_0%,#9333ea_40%,#ff4da6_75%,#ff9f1c_100%)] text-white p-3 px-6
-    cursor-pointer transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 hover:shadow-[0_15px_35px_rgba(0,0,0,0.25)]
-    active:scale-95 rounded-xl"
+              className="bg-primary hover:bg-primary-dull text-white p-3 px-6
+    cursor-pointer transition-all duration-300 rounded-xl"
             >
               Search
             </button>

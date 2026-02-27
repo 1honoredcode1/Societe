@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 import Home from "./pages/Home";
 import MarketPlace from "./pages/MarketPlace";
@@ -9,9 +9,14 @@ import Messages from "./pages/Messages";
 import MyOrders from "./pages/MyOrders";
 import Loading from "./pages/Loading";
 
+import Navbar from "./components/Navbar";
+
 const App = () => {
+  const { pathname } = useLocation();
+
   return (
     <div>
+      {!pathname.includes("/admin") && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/marketplace" element={<MarketPlace />} />
