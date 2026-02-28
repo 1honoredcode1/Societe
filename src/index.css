@@ -9,6 +9,10 @@ button {
   @apply cursor-pointer;
 }
 
+.cl-drawerRoot {
+  z-index: 100;
+}
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
