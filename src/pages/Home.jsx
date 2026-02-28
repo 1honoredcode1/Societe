@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Cta from "../components/Home/Cta";
 import Hero from "../components/Home/Hero";
 import LatestListings from "../components/Home/LatestListings";
@@ -10,6 +11,7 @@ const Home = () => {
       <LatestListings />
       <Plans />
       <Cta />
+      <Footer />
     </div>
   );
 };
