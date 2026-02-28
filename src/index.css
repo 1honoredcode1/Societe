@@ -5,6 +5,14 @@
   font-family: "Rethink Sans", sans-serif;
 }
 
+button {
+  @apply cursor-pointer;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 @theme {
   --color-primary: #ff2e88;
   --color-primary-dull: #ff4da6;

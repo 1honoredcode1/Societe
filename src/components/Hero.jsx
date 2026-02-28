@@ -108,7 +108,7 @@ const Hero = () => {
             />
             <button
               className="bg-primary hover:bg-primary-dull text-white p-3 px-6
-    cursor-pointer transition-all duration-300 rounded-xl"
+     transition-all duration-300 rounded-xl"
             >
               Search
             </button>
