@@ -1,11 +1,13 @@
 import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
+import { Provider } from "react-redux";
 
 import { ClerkProvider } from "@clerk/clerk-react";
 
 import "./index.css";
-
 import App from "./App.jsx";
+
+import { store } from "./app/store.js";
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
@@ -19,7 +21,9 @@ createRoot(document.getElementById("root")).render(
       publishableKey={PUBLISHABLE_KEY}
       appearance={{ variables: { colorPrimary: "#ff2e88" } }}
     >
-      <App />
+      <Provider store={store}>
+        <App />
+      </Provider>
     </ClerkProvider>
   </BrowserRouter>,
 );
