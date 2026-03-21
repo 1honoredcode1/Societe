@@ -1,4 +1,5 @@
 import { Route, Routes, useLocation } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 
 import Home from "./pages/Home";
 import MarketPlace from "./pages/MarketPlace";
@@ -17,6 +18,7 @@ const App = () => {
 
   return (
     <div>
+      <Toaster />
       {!pathname.includes("/admin") && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
